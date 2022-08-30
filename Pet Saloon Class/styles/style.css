@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300&family=Roboto:wght@100;400;700&family=Special+Elite&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Lato', sans-serif;
+}header.site-init{
+    height: 40vh;
+    background-image: url(../img/paws.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+p{
+
+}
+.container {
+    margin: 1rem auto;
+    width: 70%;
+}
