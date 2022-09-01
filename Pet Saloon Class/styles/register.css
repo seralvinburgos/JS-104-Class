@@ -8,7 +8,7 @@ body {
     font-family: 'Lato', sans-serif;
 }header.site-init{
     height: 44vh;
-    background-image: url(../img/home.jpg);
+    background-image: url(../img/register.jpg);
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -29,7 +29,7 @@ header h1 span {
 #logoLeft {
     float: left;
     width: 40%;
-    margin-top: 5rem;
+    margin-top: 10rem;
     font-size: 45px;
     color: rgb(38, 52, 88);
 }
@@ -59,46 +59,17 @@ nav a{
     font-weight: bold;
 }
 .navbar {
-    height: 5rem;
     background-color: rgb(38, 52, 88); 
 }
 .container {
     margin: 1rem auto;
-    padding-top: 4rem;
+    padding-top: 2rem;
     width: 50%;
 }
 .container h2 {
     font-size: 2.2rem;
     font-weight: bold;
     color: rgb(70, 179, 247)
-}
-.container h2 span {
-    font-weight: bold;
-    letter-spacing: 4px;
-}
-.testimonial {
-    background-color: rgb(238, 224, 113);
-    height: 20vh;
-    width: auto;
-    margin-top: 4rem;
-    padding-top: 3%;
-    padding-left: 15%;
-    padding-right: 15%;
-    text-align: center;
-    font-size: x-large;
-}
-.testimonial span {
-    font-size: xx-large;
-}
-.contactIcons {
-    padding: 1rem;
-    height: 2vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 5rem;
-    font-size: x-large;
-    background-color: rgb(224, 221, 221);
 }
 #info {
     text-align: center;

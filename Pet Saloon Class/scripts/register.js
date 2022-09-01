@@ -1,17 +1,5 @@
-alert(4 + " pets are registered at this time");
-
-const petsNames=["Scooby","Scrappy","Siopao","Boba"];
-console.log(petsNames[0]);
-console.log(petsNames[1]);
-console.log(petsNames[2]);
-console.log(petsNames[3]);
-
-// console.table(petsNames);
-
-//object literal
-let petSaloon={
-    //attributes
-    name:"The Pet Saloon",
+let petSalon={
+    name:"Fresh Pet",
     phone:"555-555-5555",
     address:{
         state:" Florida",
@@ -19,66 +7,65 @@ let petSaloon={
         street:"Av. University",
         zip:"32258"
     },
-    pets:[
-        {
-            name:"Scooby",
-            age:60,
-            gender:"Male",
-            breed:"Dane",
-            service:"Grooming",
-            owners:"Shaggy",
-            phone:"666-666-6666"
-        },
-        {
-            name:"Scrappy",
-            age:40,
-            gender:"Male",
-            breed:"Mixed",
-            service:"Nails cut",
-            owners:"Shaggy",
-            phone:"777-777-7777"
-        },
-        {
-            name:"Siopao",
-            age:6,
-            gender:"Male",
-            breed:"Westie-Mix",
-            service:"Grooming",
-            owners:"EJ",
-            phone:"888-888-8888"
-        },
-        {
-            name:"Boba",
-            age:4,
-            gender:"Female",
-            breed:"Maltese-Yorkie",
-            service:"Grooming",
-            owners:"EJ",
-            phone:"888-888-8888"
-        }
-    ] //pet's array
+    pets:[]
 }
-console.log(petSaloon.pets);
 
-function displaySaloonInfo(){
+//constructor
+function Pet(name,age,gender,breed,service,ownersName,contactPhone){
+    this.name = name;
+    this.age = age;
+    this.gender = gender;
+    this.breed = breed;
+    this.service = service;
+    this.owners = ownersName;//*
+    this.phone = contactPhone;//*
+}
+
+function displaySalonInfo(){
 document.getElementById("info").innerHTML=`
-    <p>${petSaloon.name} is located in ${petSaloon.address.city},${petSaloon.address.state}</p>`;
+    <p>${petSalon.name} is located in ${petSalon.address.city},${petSalon.address.state}</p>`;
 }
 
-function displayPetsNames(){
-document.getElementById("info").innerHTML=`
-    <p>${petSaloon.pets.name}</p>
-    <p>${petsNames[1]}</p>
-    <p>${petsNames[2]}</p>
-    <p>${petsNames[3]}</p>`;
+// get the values from the inputs
+let nameInput = document.getElementById("petName");
+let ageInput = document.getElementById("petAge");
+let genderInput = document.getElementById("petGender");
+let breedInput = document.getElementById("petBreed");
+let ownersName = document.getElementById("ownersName");
+let serviceSelect = document.getElementById("petService");
+let phoneInput = document.getElementById("contactPhone");
+
+function register(){
+    console.log(nameInput.value, ageInput.value, genderInput.value, breedInput.value, ownersName.value, serviceSelect.value, phoneInput.value);
+    //get the values from the inputs field from HTML
+    //once value is received, create an obj using the object constructor
+    let thePet = new Pet(nameInput.value, ageInput.value, genderInput.value, breedInput.value, ownersName.value, serviceSelect.value);
+    //push the object in the array
+    petSalon.pets.push(thePet);
+    //display the object in the console
+    console.log(petSalon.pets);
+    clearInputs();
 }
-    // use alert to display the amount of pets (alert(),length)
 
-    //travel the pets array
-for(let i=0;i<petsNames.length;i++) {
-    console.log(petsNames[i]);
-} 
-
-    //display on the console -> display them on the HTML
-
-displaySaloonInfo();
+function clearInputs(){
+    nameInput.value="";
+    ageInput.value="";
+    genderInput.value="";
+    breedInput.value="";
+    ownersName.value="";
+    serviceSelect.value="";
+    phoneInput.value="";
+}
+function init(){
+    console.log("Registering");
+    displaySalonInfo();
+    let scooby = new Pet("Scooby",60,"Male","Dane","Grooming","Shaggy","666-666-6666");
+    petSalon.pets.push(scooby);
+    let shaggy = new Pet("Shaggy",50,"Male","Westie","Grooming","Shane","555-555-5555");
+    petSalon.pets.push(shaggy);
+    let boba = new Pet("Boba",14,"Female","Morkie","Grooming","EJ","999-999-9999");
+    petSalon.pets.push(boba);
+    let siopao = new Pet("Siopao",6,"Male","Westie-Mix","Grooming","EJ","999-999-9999");
+    petSalon.pets.push(siopao);
+}
+window.onload=init;
