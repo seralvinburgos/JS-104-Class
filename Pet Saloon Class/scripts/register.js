@@ -21,6 +21,9 @@ function Pet(name,age,gender,breed,service,ownersName,contactPhone){
     this.phone = contactPhone;//*
 }
 
+function displaySalonInfo(){
+}
+
 // get the values from the inputs
 let nameInput = document.getElementById("petName");
 let ageInput = document.getElementById("petAge");
@@ -30,16 +33,29 @@ let ownersName = document.getElementById("ownersName");
 let serviceSelect = document.getElementById("petService");
 let phoneInput = document.getElementById("contactPhone");
 
+function isValid(aPet) {
+    let valid = true;
+
+    if(aPet.name == "" || aPet.service == ""){
+        valid = false;
+    }
+    return valid;  
+}
+
 function register(){
     console.log(nameInput.value, ageInput.value, genderInput.value, breedInput.value, ownersName.value, serviceSelect.value, phoneInput.value);
     //get the values from the inputs field from HTML
     //once value is received, create an obj using the object constructor
-    let thePet = new Pet(nameInput.value, ageInput.value, genderInput.value, breedInput.value, ownersName.value, serviceSelect.value);
+    let thePet = new Pet(nameInput.value, ageInput.value, genderInput.value, breedInput.value, ownersName.value,serviceSelect.value, phoneInput.value);
+
+    if(isValid(thePet)){
     //push the object in the array
     petSalon.pets.push(thePet);
-    //display the object in the console
-    console.log(petSalon.pets);
     clearInputs();
+    displayPetCards();
+    }else{
+        alert("Please add the required information.");
+    }
 }
 
 function clearInputs(){
@@ -62,5 +78,7 @@ function init(){
     petSalon.pets.push(boba);
     let siopao = new Pet("Siopao",6,"Male","Westie-Mix","Grooming","EJ","999-999-9999");
     petSalon.pets.push(siopao);
+
+    displayPetCards();
 }
 window.onload=init;
