@@ -9,6 +9,8 @@
     <script src="scripts/practice.js" defer></script>
     <script src="https://kit.fontawesome.com/356c07577e.js" crossorigin="anonymous"></script>
     <title>FRESH Pet</title>
+
+    </style>
 </head>
 <body>
     <header class="site-init">
@@ -22,30 +24,82 @@
                 <a href="register.html" id="register">Register</a>  
             </nav>
         </div>
-        <h1 id="logoLeft">A healthy,clean pet...</h1>
-        <h1 id="logoRight">...is a happy pet.</h1>
-        
+
+        <div class="container-logo1">
+            <div class="row">
+                <div id="logo1" class="col">
+                    <p>A healthy, clean pet...</p>
+                </div>
+                <div class="col"></div>
+            </div>
+        </div>
+        <div class="container-logo2">
+            <div class="row">
+                <div class="col"></div>
+                <div id="logo2" class="col">
+                    <p>...is a happy pet.</p>
+                </div>
+            </div>
+        </div>
     </header>
+    
+    
+
+    
 
     <main>
+
+
         <div class="container">
-            <h2>Welcome to the <span>FRESH</span> Pet</h2>
-            <br>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste tempore quo, magnam sit vel eius, iure nam maxime quaerat fugit labore ab laborum nisi pariatur! Sunt maxime debitis voluptates vel nulla. Officiis, animi consequuntur repudiandae hic eaque tempore reiciendis! Porro incidunt architecto ducimus! Sed quam voluptas, pariatur minus itaque laudantium.</p>
-            <br>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ipsum deserunt earum recusandae officia repellendus fugit illum dolore tenetur ducimus?</p>
+            <div class="row">
+                <div class="col">
+                    <h2>Welcome to the <span>FRESH</span> Pet</h2>
+                </div>
+            </div>
+                <br>
+                <div class="col">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste tempore quo, magnam sit vel eius, iure nam maxime quaerat fugit labore ab laborum nisi pariatur! Sunt maxime debitis voluptates vel nulla. Officiis, animi consequuntur repudiandae hic eaque tempore reiciendis! Porro incidunt architecto ducimus! Sed quam voluptas, pariatur minus itaque laudantium.</p>
+                </div>
+                <br>
+                <div class="col">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa ipsum deserunt earum recusandae officia repellendus fugit illum dolore tenetur ducimus?</p>
+                </div>
+            </div>
         </div>
+
+
         <div class="testimonial">
-            <p><span><i class="fa-solid fa-quote-left"></i></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet veritatis odit ratione hic odio ullam, dolorum velit! Harum beatae quaerat voluptas sed ea! Voluptatum, ipsum! Ducimus nesciunt maxime ipsum <span><i class="fa-solid fa-quote-right"></i></span></p>
+            <div class="row">
+                <div class="col">
+                    <p><span><i class="fa-solid fa-quote-left"></i></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet veritatis odit ratione hic odio ullam, dolorum velit! Harum beatae quaerat voluptas sed ea! Voluptatum, ipsum! Ducimus nesciunt maxime ipsum <span><i class="fa-solid fa-quote-right"></i></span></p>
+                </div>
+            </div>
             <br>
-            <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> John Doe, Jacksonville, FL</p>
+                <div class="col">
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> John Doe, Jacksonville, FL</p>
+                </div>
         </div>
 
     </main>
 
     <footer>  
-   
-
+        <div class="row">
+            <p>Sign up to receive news and updates</p>
+        </div>
+        <div class="row g-3 mx-5 ps-5 pb-5">
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="First Name" aria-label="First Name">
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name">
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address">
+            </div>
+            <div class="col-2">
+                <button class="btn btn-info" type="submit" onclick="submit();">Submit</button>
+            </div>
+        </div>
     </footer>
     
     

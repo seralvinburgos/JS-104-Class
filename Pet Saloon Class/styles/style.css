@@ -26,20 +26,19 @@ header h1 span {
     text-transform: uppercase;
     letter-spacing: 15px;
 }
-#logoLeft {
-    float: left;
-    width: 40%;
+#logo1 {
     margin-top: 5rem;
+    padding-left: 2rem;
     font-size: 45px;
+    font-weight: bold;
     color: rgb(38, 52, 88);
 }
-#logoRight {
-    float: right;
-    width: 35%;
-    height: 4vh;
-    margin-top: 25rem;
-    margin-right: -3%;
+#logo2 {
     font-size: 45px;
+    margin-top: 3rem;
+    padding-right: 2rem;
+    text-align: right;
+    font-weight: bold;
     color: rgb(38, 52, 88);
 }
 nav {   
@@ -102,4 +101,16 @@ nav a{
 }
 #info {
     text-align: center;
+}
+
+/* foooter */
+
+footer p {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 2rem;
+    color: rgb(38, 52, 88);
+    
 }

@@ -21,11 +21,6 @@ function Pet(name,age,gender,breed,service,ownersName,contactPhone){
     this.phone = contactPhone;//*
 }
 
-function displaySalonInfo(){
-document.getElementById("info").innerHTML=`
-    <p>${petSalon.name} is located in ${petSalon.address.city},${petSalon.address.state}</p>`;
-}
-
 // get the values from the inputs
 let nameInput = document.getElementById("petName");
 let ageInput = document.getElementById("petAge");

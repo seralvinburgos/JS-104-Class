@@ -22,7 +22,12 @@
                 <a href="register.html" id="register">Register</a>  
             </nav>
         </div>
-    
+        
+        <div class="row">
+            <div id="reg-logo1" class="col">
+                Routine Care and Grooming
+            </div>
+        </div>
     </header>
 
     <main>
@@ -66,18 +71,49 @@
                     <select id="petService" class="form-select">
                         <option value="" selected disabled>-- Select an option --</option>
                         <option value="1">Grooming</option>
-                        <option value="2">Nails cut</option>
+                        <option value="2">Nails Grind</option>
                         <option value="3">Vaccines</option>
+                        <option value="4">Facial Scrub</option>
+                        <option value="5">Gland Expression</option>
+                        <option value="6">Deep Conditioning</option>
                     </select>
                 </div>
                 <br>
                 <button class="btn btn-info" type="submit" onclick="register();">Register</button>
             </div>
         </div>
-
+        <br>
+        <div class="testimonial">
+            <div class="row">
+                <div class="col">
+                    <p><span><i class="fa-solid fa-quote-left"></i></span> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur amet veritatis odit ratione hic odio ullam, dolorum velit! Harum beatae quaerat voluptas sed ea! Voluptatum, ipsum! Ducimus nesciunt maxime ipsum <span><i class="fa-solid fa-quote-right"></i></span></p>
+                </div>
+            </div>
+            <br>
+                <div class="col">
+                    <p><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i> John Doe, Jacksonville, FL</p>
+                </div>
+        </div>
     </main>
 
-    <footer id="info">   
+    <footer> 
+        <div class="row">
+            <p>Sign up to receive news and updates</p>
+        </div>
+        <div class="row g-3 mx-5 ps-5 pb-5">
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="First Name" aria-label="First Name">
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="Last Name" aria-label="Last Name">
+            </div>
+            <div class="col-sm">
+              <input type="text" class="form-control" placeholder="Email Address" aria-label="Email Address">
+            </div>
+            <div class="col-2">
+                <button class="btn btn-info" type="submit" onclick="submit();">Submit</button>
+            </div>
+        </div>  
 
     </footer>
     
