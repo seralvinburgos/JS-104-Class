@@ -52,7 +52,7 @@ function register(){
     //push the object in the array
     petSalon.pets.push(thePet);
     clearInputs();
-    displayPetCards();
+    displayPetTable();
     }else{
         alert("Please add the required information.");
     }
@@ -79,6 +79,6 @@ function init(){
     let siopao = new Pet("Siopao",6,"Male","Westie-Mix","Grooming","EJ","999-999-9999");
     petSalon.pets.push(siopao);
 
-    displayPetCards();
+    displayPetTable();
 }
 window.onload=init;

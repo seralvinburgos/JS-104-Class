@@ -63,8 +63,6 @@ nav a{
     font-weight: bold;
     color: rgb(70, 179, 247)
 }
-
-
 .testimonial {
     background-color: rgb(238, 224, 113);
     height: 20vh;
@@ -79,18 +77,10 @@ nav a{
 .testimonial span {
     font-size: xx-large;
 }
-#pets {
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1rem;
+#petTable {
+    margin-top: 2rem;
 }
-.pet {
-    background-color: #dedede;
-    border: 1px solid gray;
-    padding: 1rem;
-    line-height: 0.5;
-    border-radius: 10px;
-}
+
 /* foooter */
 
 footer p {
