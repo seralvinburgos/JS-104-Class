@@ -28,7 +28,7 @@ function displayPetTable() {
     for(let i = 0; i < petSalon.pets.length; i++) {
         let pet = petSalon.pets[i];
         let tr = `
-        <tr>
+        <tr id="${pet.id}">
             <td>${pet.name}</td>
             <td>${pet.age}</td>
             <td>${pet.gender}</td>
@@ -36,6 +36,7 @@ function displayPetTable() {
             <td>${pet.service}</td>
             <td>${pet.owners}</td>
             <td>${pet.phone}</td>
+            <td id="deleteBtn"> <button onclick="deletePet(${pet.id})">🗑️</button> </td>
         </tr>
         `;
         petsTbl.innerHTML+=tr;

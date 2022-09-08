@@ -67,7 +67,7 @@ nav a{
     background-color: rgb(238, 224, 113);
     height: 20vh;
     width: auto;
-    margin-top: 4rem;
+    margin-top: 1rem;
     padding-top: 3%;
     padding-left: 15%;
     padding-right: 15%;
@@ -81,14 +81,28 @@ nav a{
     margin-top: 2rem;
 }
 
+
 /* foooter */
 
+footer {
+    background-color: rgb(222, 247, 247);
+}
 footer p {
     text-align: center;
     font-style: italic;
     font-size: 20px;
     font-weight: bold;
     padding: 2rem;
-    color: rgb(38, 52, 88);
-    
+    color: rgb(38, 52, 88);   
+}
+.footerLinks h2 {
+    font-weight: bold;
+}
+.location {
+    float: left;
+    margin-left: 10%;
+    margin-right: 0;
+    width: 15rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }

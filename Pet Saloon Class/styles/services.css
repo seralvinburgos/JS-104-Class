@@ -76,6 +76,12 @@ nav a{
     font-weight: bold;
     letter-spacing: 4px;
 }
+.container h5 {
+    line-height: 1.5;
+}
+.container a {
+    text-decoration: none;
+}
 .testimonial {
     background-color: rgb(238, 224, 113);
     height: 20vh;
@@ -102,4 +108,28 @@ nav a{
 }
 #info {
     text-align: center;
+}
+/* foooter */
+
+footer {
+    background-color: rgb(222, 247, 247);
+}
+footer p {
+    text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 1.5rem;
+    color: rgb(38, 52, 88);
+}
+.footerLinks h2 {
+    font-weight: bold;
+}
+.location {
+    float: left;
+    margin-left: 10%;
+    margin-right: 0;
+    width: 15rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
 }
