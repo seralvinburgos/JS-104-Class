@@ -76,7 +76,7 @@ function init(){
     petSalon.pets.push(shaggy);
     let boba = new Pet("Boba",14,"Female","Morkie","Grooming","EJ","999-999-9999");
     petSalon.pets.push(boba);
-    let siopao = new Pet("Siopao",6,"Male","Westie-Mix","Grooming","EJ","999-999-9999");
+    let siopao = new Pet("Siopao",6,"Male","Westie","Grooming","EJ","999-999-9999");
     petSalon.pets.push(siopao);
 
     displayPetTable();

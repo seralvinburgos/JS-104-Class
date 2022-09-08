@@ -24,35 +24,20 @@
 
 function displayPetTable() {
     const petsTbl = document.getElementById("petTable");
+    petsTbl.innerHTML=``;
     for(let i = 0; i < petSalon.pets.length; i++) {
         let pet = petSalon.pets[i];
-        let tmp = `
-        <div>
-            <table class="table table-striped mx-3 table-bordered">
-                <thead>
-                    <tr class="col">
-                        <th class="col-1">Name</th>
-                        <th class="col-1">Age</th>
-                        <th class="col-1">Gender</th>
-                        <th class="col-1">Breed</th>
-                        <th class="col-1">Service</th>
-                        <th class="col-1">Owners</th>
-                        <th class="col-1">Phone#</th>
-                    </tr>
-                </thead>
-                <tbody class="table">
-                    <tr class="col">            
-                        <td class="col-1">${pet.name}</td>
-                        <td class="col-1">${pet.age}</td>
-                        <td class="col-1">${pet.gender}</td>
-                        <td class="col-1">${pet.breed}</td>
-                        <td class="col-1">${pet.service}</td>
-                        <td class="col-1">${pet.owners}</td>
-                        <td class="col-1">${pet.phone}</td>
-                </tbody>
-            </table>
-        </div>
+        let tr = `
+        <tr>
+            <td>${pet.name}</td>
+            <td>${pet.age}</td>
+            <td>${pet.gender}</td>
+            <td>${pet.breed}</td>
+            <td>${pet.service}</td>
+            <td>${pet.owners}</td>
+            <td>${pet.phone}</td>
+        </tr>
         `;
-        petsTbl.innerHTML+=tmp;
+        petsTbl.innerHTML+=tr;
     }
 }
