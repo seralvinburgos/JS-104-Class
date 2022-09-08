@@ -61,11 +61,6 @@ nav a{
     height: 5rem;
     background-color: rgb(38, 52, 88); 
 }
-.container {
-    margin: 1rem auto;
-    padding-top: 4rem;
-    width: 50%;
-}
 .container h2 {
     font-size: 2.2rem;
     font-weight: bold;
