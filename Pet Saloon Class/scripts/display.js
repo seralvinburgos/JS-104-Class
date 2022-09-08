@@ -36,7 +36,7 @@ function displayPetTable() {
             <td>${pet.service}</td>
             <td>${pet.owners}</td>
             <td>${pet.phone}</td>
-            <td id="deleteBtn"> <button onclick="deletePet(${pet.id})">🗑️</button> </td>
+            <td><button style="border: none; margin-left: 40%;" onclick="deletePet(${pet.id})">🗑️</button> </td>
         </tr>
         `;
         petsTbl.innerHTML+=tr;

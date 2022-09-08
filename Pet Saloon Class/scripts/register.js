@@ -89,7 +89,7 @@ function search(){
     for(let i=0; i<petSalon.pets.length; i++) { //traveling the array
         let pet = petSalon.pets[i]; // get a pet values
         if(pet.name==searchString){ // compare the id with pets id's in the array
-            searchIndex = i; // get the location of the pet
+            searchString = i; // get the location of the pet
             console.log("I found it!");
         }
     }

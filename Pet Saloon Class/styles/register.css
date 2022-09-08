@@ -68,7 +68,9 @@ nav a{
 #petTable {
     margin-top: 2rem;
 }
-
+mark {
+    background:rgb(238, 224, 113);
+}
 
 /* foooter */
 
